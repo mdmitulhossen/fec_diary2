@@ -1,10 +1,20 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Login from '../Login/Login';
+import TopNav from '../TopNav/TopNav';
+import './homepage.css'
 
 
 const HomePage = () => {
     return (
-        <div className='container d-flex'>
-           <h1>This is home page</h1>
+        <div className='home d-flex flex-column'>
+            <nav className='nav'><TopNav/></nav>
+            <div className='route'>
+                <Routes>
+                    <Route path='/signIn' element={<Login/>} />
+                </Routes>
+                
+            </div>
         </div>
     );
 };

@@ -1,12 +1,19 @@
+
 .topNav{
-    width: 50vw;
+    width: 84%;
+    height: 60px;
     position: fixed;
-    top:0;
-    right: 0;
+    border-bottom: 1px solid rgb(203, 202, 202);
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 20px;
+    
 }
-.login{
-    float: right;
+.contain{
+    width: auto;
 }
+
 .login_btn{
     border: 1px solid gray !important;
 }
@@ -14,3 +21,4 @@
     background-color: gray !important;
     color: white !important;
 }
+

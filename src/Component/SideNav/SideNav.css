@@ -22,7 +22,8 @@
 
 .body{
     height: 100vh;
-    background: var(--body-color);
+    /* background: var(--body-color); */
+    width: 250px;
 }
 
 header {
@@ -50,7 +51,7 @@ header {
 .toggle{
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: -3px;
     transform: translateY(-50%);
     height: 25px;
     width: 25px;
