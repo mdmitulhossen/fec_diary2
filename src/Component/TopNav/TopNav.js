@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { auth } from '../../Firebase/Firebase';
 import "./TopNav.css";
 
 const TopNav = () => {
+    
     return (
         <div>
             <div className='topNav'>
@@ -13,7 +15,7 @@ const TopNav = () => {
                             Login
                         </button></Link>
                         <Link to="/register"><button type="button" className="btn btn-primary me-4">
-                            Sign up for free
+                            Sign up
                         </button></Link>
                         <Link
                             className="btn btn-dark px-3"

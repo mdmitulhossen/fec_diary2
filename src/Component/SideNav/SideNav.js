@@ -7,7 +7,7 @@ const SideNav = () => {
       <nav className="sideNav">
         <header className="mt-3 d-flex justify-content-center">
         <i className="fa-solid fa-graduation-cap rounded-circle header_icon"></i>
-          <h3>FEC Diary</h3>
+          <h3 className="fecDiary">FEC Diary</h3>
           {/* <i class="fa-solid fa-chevron-right toggle d-flex align-items-center justify-content-center rounded-circle text-white"></i> */}
         </header>
 
