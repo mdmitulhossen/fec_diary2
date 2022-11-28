@@ -1,0 +1,42 @@
+.RegBody 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #271818;
+        border-radius: 20px;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+        background-color: #3C3C3A;
+        color: white;
+		}
+
+.text, .password 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+    .CreateText{
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(112, 111, 108);
+    }
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		font-weight:bold;
+		}
+	

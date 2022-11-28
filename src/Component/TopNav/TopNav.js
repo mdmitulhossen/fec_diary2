@@ -12,7 +12,7 @@ const TopNav = () => {
                         <Link to="/signIn"> <button type="button" className="btn login_btn px-3 me-4">
                             Login
                         </button></Link>
-                        <Link to="signUp"><button type="button" className="btn btn-primary me-4">
+                        <Link to="/register"><button type="button" className="btn btn-primary me-4">
                             Sign up for free
                         </button></Link>
                         <Link

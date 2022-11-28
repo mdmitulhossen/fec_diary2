@@ -4,7 +4,14 @@
     width: 100%;
     transition: all 2s ease;
 }
-
+.loginFocus{
+    background-color: white !important;
+    color: black !important;
+}
+/* .loginFocus:hover{
+    background-color: black !important;
+    color: white !important;
+} */
 .card{
     background-color: rgb(60, 60, 58) !important;
 }

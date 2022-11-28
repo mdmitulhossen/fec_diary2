@@ -3,11 +3,11 @@
     width: 84%;
     height: 60px;
     position: fixed;
-    border-bottom: 1px solid rgb(203, 202, 202);
     background-color: #FFF;
     display: flex;
     justify-content: space-around;
     padding-right: 20px;
+    margin-left: -3px;
     
 }
 .contain{

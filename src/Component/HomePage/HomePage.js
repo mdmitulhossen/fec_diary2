@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Login from '../Login/Login';
 import TopNav from '../TopNav/TopNav';
 import './homepage.css'
+import Register from "./../Register/Register";
 
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
             <div className='route'>
                 <Routes>
                     <Route path='/signIn' element={<Login/>} />
+                    <Route path='/register' element={<Register/>} />
                 </Routes>
                 
             </div>
