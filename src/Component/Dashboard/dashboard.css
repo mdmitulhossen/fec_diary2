@@ -1,0 +1,42 @@
+/* .dashboard{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.dashboardTop{
+    width: 100%;
+    background-color: rgb(247, 248, 249);
+    margin-top: -2px;
+    margin-left: 2px;
+    border-radius: 10px;
+}
+.dashboardTop>p{
+    margin: -5px 0 0 0;
+    color: rgb(153, 161, 161);
+    
+}
+.dashboardTop>h5{
+    color: rgb(96, 118, 137);
+    
+}
+.dash{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.map{
+    width:80%;
+     height:400px;
+     margin-top: 20px;
+     border: 1px solid black;
+     border-radius: 10px;
+     /* border: 0;allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" */
+    
+}

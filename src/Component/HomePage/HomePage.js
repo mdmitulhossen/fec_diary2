@@ -4,16 +4,19 @@ import Login from '../Login/Login';
 import TopNav from '../TopNav/TopNav';
 import './homepage.css'
 import Register from "./../Register/Register";
+import Dashboard from "./../Dashboard/Dashboard";
 
 
 const HomePage = () => {
+    
     return (
         <div className='home d-flex flex-column'>
             <nav className='nav'><TopNav/></nav>
             <div className='route'>
                 <Routes>
+                    <Route path='/' element={<Dashboard/>} />
                     <Route path='/signIn' element={<Login/>} />
-                    <Route path='/register' element={<Register/>} />
+                    <Route path='/register' element={<Register/>} />                   
                 </Routes>
                 
             </div>

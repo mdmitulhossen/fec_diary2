@@ -1,37 +1,46 @@
 import React, { useState } from 'react';
 import "./Register.css"
-import { Link } from "react-router-dom";
-import { createUserWithEmailAndPassword, onAuthStateChanged, updateProfile } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "./../../Firebase/Firebase";
 
 
 const Register = () => {
+	const navigate=useNavigate();
 	const [name,setName]=useState('');
 	const [contactNo,setContactNo]=useState('');
 	const [email,setEmail]=useState('');
 	const [password,setPassword]=useState('');
 	const [user,setUser]=useState('');
 
+	//Register
 	const handleRagister = async()=>{
         //   const user = await ragister(email,password);
 		//   console.log(user);
 		try{
-			const user = createUserWithEmailAndPassword(auth,email,password);
+			await createUserWithEmailAndPassword(auth,email,password).then((userCredential)=>{
+				const user = userCredential.user;
+				console.log(user);
+				updateprofile(name);
+				if(user){
+					navigate('/signIn');
+				}
+			})
 			// const user = await ragister(email,password);
-			console.log(user);
+			// console.log(user);
+			alert("register successfull");
 			
 		}catch(error){
               console.log(error.massage);
 		}
 	}
 
-	updateProfile(auth.currentUser,{
-		displayName:name
-	 })
-
-	onAuthStateChanged(auth,(currentUser)=>{
-		setUser(currentUser)
-	 });
+	//update profile
+		const updateprofile = async(name)=>{
+			await updateProfile(auth.currentUser,{
+				displayName:name
+			 }).then(()=>console.log("profile updated" + auth.currentUser.displayName))
+		}
 	 
 	
     return (

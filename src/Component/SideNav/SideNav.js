@@ -22,7 +22,7 @@ const SideNav = () => {
             <ul>
               <li className="item  pt-3">
                 <NavLink
-                  to="dashboard"
+                  to="/"
                   className="text-dark d-flex text-decoration-none"
                 >
                   <i className="fa-solid fa-house-user mt-1 item-i"></i>

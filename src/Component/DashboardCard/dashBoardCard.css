@@ -1,0 +1,12 @@
+.cardIcon{
+    font-size: 25px;
+    margin-top: -10px;
+}
+.dashCard{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
