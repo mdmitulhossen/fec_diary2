@@ -43,7 +43,7 @@ const TopNav = () => {
                     <div>
                         {
                             name ? <Link to="/"> <button onClick={handleSignOut} type="button" className="btn login_btn px-3 me-4">
-                                Login Out
+                                Log Out
                             </button></Link> : <Link to="/signIn"> <button type="button" className="btn login_btn px-3 me-4">
                                 SignIn
                             </button></Link>

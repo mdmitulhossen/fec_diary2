@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto+Mono&family=Rubik+Distressed&family=Rubik:ital,wght@1,500&display=swap');
+
+*{
+     font-family: 'Noto Sans', sans-serif; 
+    /* font-family: 'Roboto Mono', monospace;  */
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Rubik Distressed', cursive; */
+}

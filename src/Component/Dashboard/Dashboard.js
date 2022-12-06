@@ -11,10 +11,10 @@ const Dashboard = () => {
             </div>
             
             <div className='dash mt-4'>
-                <DashBoardCard/>
-                <DashBoardCard/>
-                <DashBoardCard/>
-                <DashBoardCard/>
+                <DashBoardCard card="Student" icon={<i className="fa-solid fa-people-group mt-1 item-i"></i>}/>
+                <DashBoardCard card="Teacher" icon={<i className="fa-solid fa-chalkboard-user mt-1 item-i"></i>}/>
+                <DashBoardCard card="Staff" icon={<i className="fa-solid fa-person-cane mt-1 item-i"></i>}/>
+                <DashBoardCard card="Notice" icon={<i className="fa-solid fa-bell mt-1 item-i"></i>}/>
 
             </div>
             
